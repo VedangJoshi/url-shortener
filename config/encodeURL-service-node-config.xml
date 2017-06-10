@@ -14,7 +14,7 @@
 
         <property name="userAttributes">
             <map key-type="java.lang.String" value-type="java.lang.Boolean">
-                <entry key="UrlEncoder.node" value="true"/>
+                <entry key="encodeURL.service.node" value="true"/>
             </map>
         </property>
 

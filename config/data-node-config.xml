@@ -30,7 +30,7 @@
             <list>
                 <!-- Cache for URLs -->
                 <bean class="org.apache.ignite.configuration.CacheConfiguration">
-                    <property name="name" value="URL"/>
+                    <property name="name" value="encodeURLService"/>
                     <property name="memoryMode" value="OFFHEAP_TIERED"/>
                     <property name="nodeFilter">
                         <bean class="common.filters.DataNodeFilter"/>
