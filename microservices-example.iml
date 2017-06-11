@@ -27,5 +27,8 @@
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:3.5.0" level="project" />
     <orderEntry type="library" name="Maven: com.h2database:h2:1.4.191" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver:3.4.0-beta1" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:bson:3.4.0-beta1" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:3.4.0-beta1" level="project" />
   </component>
 </module>

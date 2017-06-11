@@ -30,7 +30,7 @@
             <list>
                 <!-- Cache for URLs -->
                 <bean class="org.apache.ignite.configuration.CacheConfiguration">
-                    <property name="name" value="encodeURLService"/>
+                    <property name="name" value="URL"/>
                     <property name="memoryMode" value="OFFHEAP_TIERED"/>
                     <property name="nodeFilter">
                         <bean class="common.filters.DataNodeFilter"/>
@@ -70,22 +70,22 @@
                     <!-- Enabling the read-through feature for the store. -->
                     <property name="readThrough" value="true"/>
 
-                    <!-- Configuring SQL schema. -->
+                    <!-- Configuring schema. -->
                     <property name="queryEntities">
                         <list>
                             <bean class="org.apache.ignite.cache.QueryEntity">
                                 <!-- Setting indexed type's key class -->
-                                <property name="keyType" value="java.lang.Integer"/>
+                                <property name="keyType" value="java.lang.String"/>
 
                                 <!-- Setting indexed type's value class -->
                                 <property name="valueType"
-                                          value="services.encodeURL.common.Maintenance"/>
+                                          value="java.lang.URL"/>
 
                                 <!-- Defining fields that will be either indexed or queryable.
                                 Indexed fields are added to 'indexes' list below.-->
                                 <property name="fields">
                                     <map>
-                                        <entry key="vehicleId" value="java.lang.Integer"/>
+                                        <entry key="url" value="java.lang.String"/>
                                     </map>
                                 </property>
 
@@ -94,7 +94,7 @@
                                     <list>
                                         <!-- Single field (aka. column) index -->
                                         <bean class="org.apache.ignite.cache.QueryIndex">
-                                            <constructor-arg value="vehicleId"/>
+                                            <constructor-arg value="url"/>
                                         </bean>
                                     </list>
                                 </property>

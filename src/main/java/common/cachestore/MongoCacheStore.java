@@ -10,7 +10,6 @@ import org.apache.ignite.binary.BinaryObject;
 import org.apache.ignite.cache.store.CacheStoreAdapter;
 
 public class MongoCacheStore extends CacheStoreAdapter<String, String> {
-    // TODO: Implement interface to MongoDB
 
     private Map<String, String> storeImpl = new ConcurrentHashMap<String, String>();
 
